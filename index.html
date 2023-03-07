@@ -8,107 +8,420 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>???</title>
+    <title>arcos?</title>
+    <!-- https://arcos.org.br/ -->
   </head>
   <body>
+    <!-- Parte 1 -->
     <header>
-      <div class="navbar navbar-expand-md">
-        <a href="#" class="navbar-brand"><h1>arcos</h1></a>
+      <div class="container">
+        <div class="navbar navbar-expand-md">
+          <a href="#" class="navbar-brand p-4"><h1>arcos</h1></a>
 
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#menu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <nav class="collapse navbar-collapse justify-content-end" id="menu">
-          <ul class="nav navbar-nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link" href="#cursos">Cursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#livros">Livros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#textos">Textos</a>
-            </li>
-            <li class="nav-item">
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control" type="search" placeholder="Buscar" />
-                  <button class="btn btn-outline-primary" type="submit">
-                    Buscar
-                  </button>
-                </form>
+          <nav
+            class="collapse navbar-collapse | justify-content-end p-4"
+            id="menu"
+            role="navigation"
+          >
+            <ul class="nav navbar-nav nav-pills text-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#cursos">Cursos</a>
               </li>
-          </ul>
-        </nav>
+              <li class="nav-item">
+                <a class="nav-link" href="#livros">Livros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#textos">Textos</a>
+              </li>
+              <!-- <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0">
+                  <div class="input-group">
+                    <input class="form-control" type="search" placeholder="⌕" />
+                    <button class="btn btn-outline-primary" type="submit">
+                      Buscar
+                    </button>
+                  </div>
+                </form>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
       </div>
-      <div class="global-cover"></div>
+      <!-- <div class="global-cover"></div> -->
     </header>
     <main>
-      <section class="carousel" id="cursos">
-        <h2>Cursos</h2>
-      </section>
-      <section class="grid" id="livros">
-        <h2>Livros</h2>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </section>
-      <section class="grid" id="textos">
-        <h2>Textos</h2>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </section>
-    </main>
+      <!-- Parte 2 -->
+      <h2 id="cursos">Cursos</h2>
+      <div class="carousel slide" data-bs-ride="carousel" id="my-carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2500">
+            <img
+              class="d-block w-100"
+              src="https://images.unsplash.com/photo-1601388152430-4ad0f14c0788?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGZsb3d8ZW58MHx8fHwxNjI1MDk4MTg3&ixlib=rb-1.2.1&q=80&w=2000"
+              alt="Arte abstrata"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Curso: Metodologia de Pesquisa</h3>
+              <p>
+                Curso voltado a desenvolver habilidades ligadas ao planejamento
+                e à execução de pesquisas em direito, com foco em pesquisas
+                empíricas. Com 12 módulos (30h), este curso foi oferecido em
+                2020.
+              </p>
+              <p><small>por Alexandre Costa</small></p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img
+              class="d-block w-100"
+              src="https://images.unsplash.com/photo-1477240489935-6c96abea2aba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDEyfHxwaGlsb3NvcGh5fGVufDB8fHx8MTYyNTA5ODkwNw&ixlib=rb-1.2.1&q=80&w=2000"
+              alt="Livro"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Curso: Filosofia do Direito</h3>
+              <p>
+                Curso voltado a desenvolver uma compreensão sobre os modelos
+                conceituais utilizados para descrever e explicar as atividades
+                jurídicas. Com 15 módulos (60h), este curso tem sido oferecido
+                na UnB desde o ano 2015.
+              </p>
+              <p><small>por Alexandre Costa</small></p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img
+              class="d-block w-100"
+              src="https://images.unsplash.com/photo-1561323587-7464f7689886?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDMzfHxjaGVzc3xlbnwwfHx8fDE2MjUwOTg3MzI&ixlib=rb-1.2.1&q=80&w=2000"
+              alt="Jgo de xadrez"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Curso: Direito Processual Civil 2</h3>
+              <p>
+                Curso voltado a desenvolver conhecimentos e habilidades
+                relacionadas a cumprimento de sentença e execução cível. Com 15
+                módulos (60h), este curso tem sido oferecido na UnB desde o ano
+                2016.
+              </p>
+              <p><small>por Henrique Costa</small></p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2500">
+            <img
+              class="d-block w-100"
+              src="https://images.unsplash.com/photo-1567874790230-3acbb5149829?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDMxfHxjaGVzc3xlbnwwfHx8fDE2MjUwOTg3MzI&ixlib=rb-1.2.1&q=80&w=2000"
+              alt="Jogo de xadrez"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Curso: Direito Processual Civil 3</h3>
+              <p>
+                Curso voltado a desenvolver conhecimentos e habilidades
+                relacionadas aos recursos cíveis. Com 15 módulos (60h), este
+                curso tem sido oferecido na UnB desde o ano 2016.
+              </p>
+              <p><small>por Henrique Costa</small></p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#my-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#my-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#my-carousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#my-carousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#my-carousel"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#my-carousel"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+      </div>
 
+      <!-- Parte 3 -->
+      <h2>Livros</h2>
+      <div class="container">
+        <section
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-3 gy-3"
+          id="livros"
+        >
+          <article class="col">
+            <div class="card h-100 text-bg-dark">
+              <img
+                class="card-img"
+                src="https://arcos.org.br/content/images/2023/01/IMG_20221212_083542.jpg"
+                alt=""
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end text-end d-flex flex-column justify-content-end text-end"
+              >
+                <h3 class="card-title">Philosophie, droit et langage</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="card-text">
+                  <small>por Alexandre Costa</small>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="col">
+            <div class="card h-100 text-bg-dark">
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1473163928189-364b2c4e1135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fG1hcHN8ZW58MHx8fHwxNjUzNjY5Njg5&ixlib=rb-1.2.1&q=80&w=2000"
+                alt=""
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end text-end"
+              >
+                <h3 class="card-title">Filosofia do Direito?</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="card-text">
+                  <small>por Alexandre Costa</small>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="col">
+            <div class="card h-100 text-bg-dark">
+              <img
+                class="card-img"
+                src="https://arcos.org.br/content/images/2022/08/Canela-de-Ema.JPG"
+                alt=""
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end text-end"
+              >
+                <h3 class="card-title">Introdução Zetética ao Direito</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="card-text">
+                  <small>por Alexandre Costa</small>
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <!-- Parte 4 -->
+      <h2>Textos</h2>
+      <div class="container">
+        <section
+          class="row row-cols-2 row-cols-md-3 row-cols-lg-5 gx-4 gy-4"
+          id="textos"
+        >
+          <article class="col">
+            <div class="card mh-50 h-100 text-bg-dark">
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1579381246873-f53e1a727258?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDIzfHxzdG9uZWhlbmdlfGVufDB8fHx8MTY1NTE1MTAzNg&ixlib=rb-1.2.1&q=80&w=2000"
+                alt=""
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end text-end"
+              >
+                <div class="container">
+                  <h3 class="card-title">Natureza e Política</h3>
+                  <p class="card-text"><small>por Alexandre Costa</small></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col">
+            <div class="card h-100 text-bg-dark">
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1613410882317-a0b3951e111a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDV8fHlpbiUyMHlhbmd8ZW58MHx8fHwxNjU1MTQ0Nzc5&ixlib=rb-1.2.1&q=80&w=2000"
+                alt=""
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end text-end"
+              >
+                <h3 class="card-title">O Tao do Cérebro</h3>
+                <p class="card-text"><small>por Alexandre Costa</small></p>
+              </div>
+            </div>
+          </article>
+          <article class="col">
+            <div class="card h-100 text-bg-dark">
+              <img
+                class="card-img"
+                src="https://arcos.org.br/content/images/2021/10/nadine-shaabana-votwQUV9ts4-unsplash--1-.jpg"
+                alt=""
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end text-end"
+              >
+                <h3 class="card-title">Direito e Pesquisa</h3>
+                <p class="card-text">
+                  <small
+                    >por Alexandre Costa<br />
+                    & outros</small
+                  >
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="col">
+            <div class="card h-100 text-bg-dark">
+              <img
+                class="card-img"
+                src="https://arcos.org.br/content/images/2021/08/2021-08-06_09-21-49-1.png"
+                alt=""
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end text-end"
+              >
+                <h3 class="card-title">Modelos de dados</h3>
+                <p class="card-text">
+                  <small
+                    >por Alexandre Costa <br />
+                    & Henrique Costa</small
+                  >
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="col">
+            <div class="card h-100 text-bg-dark">
+              <img
+                class="card-img"
+                src="https://arcos.org.br/content/images/2021/07/2021-07-29_13-54-41-2.png"
+                alt=""
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end text-end"
+              >
+                <h3 class="card-title">Coleta de dados judiciais</h3>
+                <p class="card-text"><small>por Alexandre Costa</small></p>
+              </div>
+            </div>
+          </article>
+          <article class="col">
+            <div class="card h-100 text-bg-dark">
+              <img
+                class="card-img"
+                src="https://arcos.org.br/content/images/2021/07/todd-turner-Af9cNES03LU-unsplash.jpg"
+                alt=""
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end text-end"
+              >
+                <h3 class="card-title">
+                  Influência de Hume: cataclisma e marola
+                </h3>
+                <p class="card-text"><small>por Alexandre Costa</small></p>
+              </div>
+            </div>
+          </article>
+          <article class="col">
+            <div class="card h-100 text-bg-dark">
+              <img
+                class="card-img"
+                src="https://arcos.org.br/content/images/2021/07/miro-2.jpg"
+                alt=""
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end text-end"
+              >
+                <h3 class="card-title">(Re)pensar o Social</h3>
+                <p class="card-text">
+                  <small
+                    >por Miroslav Milovic <br />
+                    & Alexandre Costa</small
+                  >
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
     <footer>
-      <p>&copy; Gustavo Araújo - Todos os direitos reservados - 2023</p>
+      <p class="text-end m-1">
+        <small>&copy; 2023 Gustavo Costa - Todos os direitos reservados</small>
+      </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="main.js"></script>
   </body>
 
   <style>
-    header {
-      background-color: rgba(250, 192, 0, 1);
-    }
-
-    .nav-link {
-      text-align: right;
-    }
-
-    .global-cover {
-      position: absolute;
-      z-index: 3;
-      width: 100%;
-      height: 1024px;
-      background: rgba(250, 192, 0, 1);
+    body {
+      /* https://cssgradient.io/ */
+      background: rgb(253, 210, 67);
       background: linear-gradient(
         0deg,
-        rgba(250, 192, 0, 0) 0%,
-        rgba(250, 192, 0, 1) 100%
+        rgba(253, 210, 67, 0) 0%,
+        rgba(253, 210, 67, 1) 100%
       );
     }
 
-    footer {
-      display: block;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding-bottom: 1ch;
-      padding-right: 1ch;
+    h2 {
+      text-align: center;
+      margin: 2rem 0 1rem;
+    }
+
+    img {
+      object-fit: cover;
+      overflow: hidden;
+      filter: brightness(75%);
+      /* box-shadow: inset 0 0 300px black; */
+    }
+
+    /* hack p regular o tamanho dos cards */
+    img {
+      height: 400px;
+    }
+
+    .card {
+      border: 0;
+    }
+
+    article {
+      height: 300px;
+    }
+
+    input {
+      max-width: 150px;
+      padding-left: 1em;
     }
   </style>
 </html>
